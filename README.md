@@ -1,6 +1,10 @@
 # Deploy simple EKS with terraform
 This project only show the example deploy EKS using terraform with no module, you need to know about Cloud AWS fundamental & Infrastructure as code Principal, do with your own risk
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/alendwahida/terraform-aws-simple-eks/main/blob/awn-simple-eks-project-vpc.jpg"></img>
+</p>
+
 # terraform-aws-simple-eks
 
 Tutorial:
