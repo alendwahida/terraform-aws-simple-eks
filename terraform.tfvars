@@ -2,9 +2,6 @@
 owner = "alend"
 env = "practice"
 
-#Setup VPC
-cidr_vpc = "192.0.0.0/16"
-
 #Setup EKS
 eks_cluster_name = "awn-simple-eks-project-eks-1"
 eks_version = "1.21"

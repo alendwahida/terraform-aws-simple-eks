@@ -2,9 +2,6 @@
 variable "owner" {}
 variable "env" {}
 
-#Setup VPC
-variable "cidr_vpc" {}
-
 #Setup EKS
 variable "eks_cluster_name" {}
 variable "eks_version" {}
