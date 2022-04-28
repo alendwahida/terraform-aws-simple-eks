@@ -8,11 +8,11 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
   default_tags {
     tags = {
-	  Env = "practice"
-	  Owner = "alend"
+	  Env = var.env
+	  Owner = var.owner
     }
   }
 }

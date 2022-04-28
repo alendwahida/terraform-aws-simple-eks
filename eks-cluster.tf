@@ -1,6 +1,6 @@
 resource "aws_eks_cluster" "awn-simple-eks-project-eks" {
-  name     = "awn-simple-eks-project-eks"
-  version = "1.22"
+  name     = var.eks_cluster_name
+  version = var.eks_version
   role_arn = aws_iam_role.eksClusterRoleCilistProject.arn
 
   vpc_config {
@@ -46,10 +46,10 @@ resource "aws_eks_addon" "awn-simple-eks-addon-kube-proxy-project-eks" {
 #Node Group Configuration
 resource "aws_eks_node_group" "awn-simple-eks-project-eks-node-group" {
   cluster_name    = aws_eks_cluster.awn-simple-eks-project-eks.name
-  node_group_name = "awn-simple-eks-project-eks-node-group"
-  capacity_type = "ON_DEMAND"
-  disk_size = 20
-  instance_types = ["t3.micro"]
+  node_group_name = var.eks_node_name
+  capacity_type = var.eks_capacity_type
+  disk_size = var.eks_disk_size
+  instance_types = [var.eks_instance_type]
   
   node_role_arn = aws_iam_role.eksClusterNodeGroupRoleCilistProject.arn
   subnet_ids = [
