@@ -17,7 +17,8 @@ Tutorial:
    ```bash
    aws configure
    ```
-### 3. Clone & Terraform apply 
+### 3. Clone & Terraform apply
+   - Edit terraform.tfvars file to config EKS Configuration
    ```bash
    git clone https://github.com/alendwahida/terraform-aws-simple-eks.git
    cd terraforaws-simple-eks
